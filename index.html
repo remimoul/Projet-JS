@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cours en ligne</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="row">
+        <div class="four columns logo">
+          <img src="img/coding_factory.jpg" id="logo">
+        </div>
+        <div class="two columns u-pull-right">
+          <ul>
+            <li class="submenu">
+              <img src="img/cart.png" id="img-cart">
+              <div id="cart">
+                <table id="cart-table" class="u-full-width">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Article</th>
+                      <th>Prix</th>
+                      <th>Qté</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="empty-cart" class="button u-full-width">Vider le panier</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <form id="search-item" class="search-form">
+    <input type="text" placeholder="Rechercher ...">
+  </form>
+
+  <div id="courses-list">
+
+    <h1>Cours en ligne</h1>
+    <div class="courses__container"></div>
+    <div id="no_course" class="hidden">Aucun cours n'est disponible pour votre recherche</div>
+  </div>
+
+  <div class="courses__container">
+    <div class="course__item">
+      <figure class="course_img">
+        <img src="img/courses/ux_ui.jpg">
+      </figure>
+      <div class="info__card">
+        <h4>UX/UI</h4>
+        <figure class="mark m_4">
+          <img src="img/rates.png">
+        </figure>
+        <p>
+          <span class="price">200 €</span>
+          <span class="discount">9.99 €</span>
+        </p>
+        <p>
+          Disponible: <span class="stock">10</span>
+        </p>
+        <a href="#" class="add-to-cart" data-id="1"><i class="fa fa-cart-plus"></i>Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="course__item">
+      <figure class="course_img">
+        <img src="img/courses/php_8.png">
+      </figure>
+      <div class="info__card">
+        <h4>PHP 8</h4>
+        <figure class="mark m_3">
+          <img src="img/rates.png">
+        </figure>
+        <p>
+          <span class="price">200 €</span>
+          <span class="discount">9.99 €</span>
+        </p>
+        <p>
+          Disponible: <span class="stock">10</span>
+        </p>
+        <a href="#" class="add-to-cart" data-id="2"><i class="fa fa-cart-plus"></i>Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="course__item">
+      <figure class="course_img">
+        <img src="img/courses/react_js.png">
+      </figure>
+      <div class="info__card">
+        <h4>React JS</h4>
+        <figure class="mark m_2">
+          <img src="img/rates.png">
+        </figure>
+        <p>
+          <span class="price">200 €</span>
+          <span class="discount">9.99 €</span>
+        </p>
+        <p>
+          Disponible: <span class="stock">5</span>
+        </p>
+        <a href="#" class="add-to-cart" data-id="3"><i class="fa fa-cart-plus"></i>Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="course__item">
+      <figure class="course_img">
+        <img src="img/courses/node_js.jpg">
+      </figure>
+      <div class="info__card">
+        <h4>Node JS</h4>
+        <figure class="mark m_5">
+          <img src="img/rates.png">
+        </figure>
+        <p>
+          <span class="price">200 €</span>
+          <span class="discount">9.99 €</span>
+        </p>
+        <p>
+          Disponible: <span class="stock">3</span>
+        </p>
+        <a href="#" class="add-to-cart" data-id="4"><i class="fa fa-cart-plus"></i>Ajouter au panier</a>
+      </div>
+    </div>
+
+    <div class="course__item">
+      <figure class="course_img">
+        <img src="img/courses/my_sql.png">
+      </figure>
+      <div class="info__card">
+        <h4>MySQL</h4>
+        <figure class="mark m_4">
+          <img src="img/rates.png">
+        </figure>
+        <p>
+          <span class="price">200 €</span>
+          <span class="discount">9.99 €</span>
+        </p>
+        <p>
+          Disponible: <span class="stock">2</span>
+        </p>
+        <a href="#" class="add-to-cart" data-id="5"><i class="fa fa-cart-plus"></i>Ajouter au panier</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+  </footer>
+
+  <script src="data/courses.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/search.js"></script>
+
+</body>
+</html>
